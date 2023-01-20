@@ -1,13 +1,13 @@
 {
     "builds": [{
-        "src": "proup/wsgi.py",
+        "src": "proup/main.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "proup/wsgi.py"
+            "dest": "proup/main.py"
         }
     ]
 }
